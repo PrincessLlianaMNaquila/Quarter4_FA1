@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            background: url("images/bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            width: 48%;
+            margin-top: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button.reset {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Support "Save The Children" Charity</h2>
+        <p>Build a better world for and with children, because:</p>
+        <ul>
+            <li>We ensure children’s unique needs are met and their voices are heard. </li>
+            <li>We deliver lasting results for millions of children, including those hardest to reach.</li>
+            <li>When crises strike, and children are most vulnerable, we are always among the first to respond.</li>
+        </ul>
+        <form id="signupForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label>Sex:</label>
+            <input type="radio" name="sex" value="Male" required> Male
+            <input type="radio" name="sex" value="Female" required> Female
+            <input type="radio" name="sex" value="Prefer not to say" required> Prefer not to say</form><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number (Optional):</label>
+            <input type="text" id="contact" name="contact">
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
